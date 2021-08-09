@@ -1,0 +1,61 @@
+ @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Public+Sans:wght@400;700&display=swap');
+
+ :root {
+     /* primary color */
+     --dark-pink: hsl(337, 48%, 49%);
+     --link-water-white: hsl(220, 60%, 99%);
+
+     /* secondary color */
+     --san-juan-blue : hsl(207, 33%, 32%);
+     --mirage-blue : hsl(207, 27%, 15%);
+     --charm-pink-actives : hsl(337, 60%, 64%);
+     --light-juan-blue: hsl(207, 16%, 50%);
+
+          /* font familly*/
+    --ff-body: 'Public Sans', sans-serif;
+    --ff-heading: 'DM Serif Display', serif;
+
+      /* font size */
+      --fs-body-400: .938rem;
+      --fs-v1-400: 4.5rem;
+      --fs-v2-400: 3.5rem;
+      --fs-v3-400: 3rem;
+      --fs-v4-400: 2rem;
+      --fs-v5-400: 2.25rem;
+      --fs-v6-400: 1.5rem;
+      --fs-v7-400: 1.125rem;
+
+      /* font weight */
+      --fw-400: 400;
+      --fw-700: 700;
+ }
+
+
+ /* reset settings */
+ body {
+     font-family: var(--ff-body);
+     min-height: 100vh;
+     text-rendering: optimizeSpeed;
+     scroll-behavior: smooth;
+     line-height: 1.5;
+     overflow-x: hidden;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+     font-family: var(--ff-heading);
+     line-height: 1.1;
+ }
+
+ a {
+     text-decoration: none;
+ }
+
+ li {
+     list-style: none;
+ }
+ /* end reset setting */
