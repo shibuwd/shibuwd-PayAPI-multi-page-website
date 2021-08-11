@@ -31,7 +31,7 @@
       --fw-700: 700;
  }
 
-
+ 
  /* reset settings */
  *,
  *::after,
@@ -226,6 +226,11 @@
 .hero-container picture{
    z-index: 9;
    margin-left: 3rem;
+   margin-top: -1.2rem;
+}
+
+.hero {
+   position: relative;
 }
  
  .hero-container {
@@ -238,14 +243,16 @@
 
   .circle {
     position: absolute;
-    transform: scale(1.5);
-    top: -13rem;
+    width: 780px;
+    height: 780px;
+    left: -202px;
+    top: -550px;
  }
 
  .text h1 {
     font-size: var(--fs-v4-400);
     color: var(--san-juan-blue);
-    margin-top: -4.5rem;
+    margin-top: -5rem;
     padding: 0 1rem;
     margin-bottom: 1.5rem;
  }
@@ -277,5 +284,214 @@
 
  .hero-desc span {
     font-weight: var(--fw-700);
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid var(--san-juan-blue);
  }
+/* end hero section */
+
+
+/* clients section */
+.clients {
+   background-color: var(--mirage-blue);
+   height: 670px;
+   text-align: center;
+   position: relative;
+   overflow: hidden;
+}
+
+.clients .circle-2 {
+   position: absolute;
+   width: 780px;
+   height: 780px;
+   left: -199px;
+   bottom: 475px;
+}
+
+.partner {
+   padding-top: 5rem;
+   padding-bottom: 3rem;
+}
+
+.logo img {
+   width: 107px;
+}
+
+ .logo {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   padding: 1rem 0;
+}
+
+.clients-text h2 {
+   font-size: var(--fs-v4-400);
+   color: var(--link-water-white);
+}
+
+.clients-text p{
+   color: var(--link-water-white);
+   opacity: 70%;
+   padding: 2rem .8rem;
+   margin-bottom: 3rem;
+}
+
+.clents-btn .btn {
+   background: none;
+   border: 1px solid var(--link-water-white);
+   text-transform: capitalize;
+   transition: .6s cubic-bezier(0.12, 0, 0.39, 0);
+}
+
+.clents-btn .btn:hover,
+.clents-btn .btn:active {
+   background: var(--link-water-white);
+   color: var(--mirage-blue);
+}
+/* end clients section */
+
+
+/* implement section */
+.implement {
+   text-align: center;
+   background-color: var(--link-water-white);
+   padding: 2rem 0;
+}
+
+.implement-img picture {
+   margin-left: 2rem;
+}
+
+.implement-text h3 {
+   font-size: var(--fs-v5-400);
+   color: var(--san-juan-blue);
+}
+
+.implement p {
+   color: var(--light-juan-blue);
+   padding: 1rem .5rem;
+}
+/* end implement section */
+
+
+/* ui-ux section */
+.ui-ux {
+   text-align: center;
+   background-color: var(--link-water-white);
+}
+
+.ui-ux-text h3 {
+   font-size: var(--fs-v5-400);
+   color: var(--san-juan-blue);
+}
+
+.ui-ux-text p {
+   color: var(--san-juan-blue);
+   padding: 1rem .8rem;
+   opacity: 70%;
+}
+/* end ui-ux section */
+
+
+/* services section */
+.services {
+   background-color: var(--link-water-white);
+}
+
+.service {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+   padding: 3rem 0rem;
+}
+
+.service h4 {
+   font-size: var(--fs-v8-400);
+   text-transform: capitalize;
+   color: var(--san-juan-blue);
+   font-family: var(--ff-body);
+   padding: 1.2rem 0;
+}
+
+.service p {
+   color: var(--san-juan-blue);
+   opacity: 70%;
+   padding: 0  1rem;
+}
+/* end services section */
+
+
+/* ready section */
+.ready {
+   text-align: center;
+   background-color: var(--link-water-white);
+   padding: 3rem 0;
+}
+
+.ready h5 {
+   font-size: var(--fs-v4-400);
+   color: var(--san-juan-blue);
+}
+
+/* end ready section */
+
+
+/* footer section */
+.footer-container {
+   background-color: var(--mirage-blue);
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 353px;
+   position: relative;
+   overflow: hidden;
+}
+
+.footer-container .circle-3 {
+   position: absolute;
+   width: 780px;
+   height: 780px;
+   right: -203px;
+   bottom: -604px;
+}
+
+.footer-logo {
+   padding: 2rem 0;
+}
+
+.footer-link li {
+   padding: .8rem 0;
+}
+
+.footer-link a {
+   font-weight: var(--fw-700);
+   text-transform: capitalize;
+   color: var(--link-water-white);
+   opacity: 70%;
+   transition: .6s cubic-bezier(0.37, 0, 0.63, 1);
+}
+
+.footer-link a:hover,
+.footer-link a:focus {
+   opacity: 100%;
+}
+
+.social-icons {
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   padding: 1rem 0;
+}
+
+.social-icons a {
+   font-size: 1.5rem;
+   color: var(--link-water-white);
+   transition: .6s cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+.social-icons a:hover,
+.social-icons a:focus {
+   color: var(--charm-pink-actives);
+}
+/* end services section */
