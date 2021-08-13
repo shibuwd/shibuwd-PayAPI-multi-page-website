@@ -77,7 +77,6 @@
  li {
     list-style: none;
  }
-
  /* end reset setting */
 
 
@@ -97,9 +96,6 @@
 .btn:focus {
     filter: contrast(.85);
 }
-
-
-
 /* end global style */
 
 
@@ -107,7 +103,6 @@
  #header {
     position: relative;
     width: 100vw;
-    /* height: 100vh; */
     overflow: hidden; 
     background-color: hsl(207, 44%, 95%);
  }
@@ -120,7 +115,6 @@
  #header .nav-bar {
     display: flex;
     justify-content: space-between;
-    /* width: 100%; */
     height: 3rem;
     padding: 2rem 2rem;
  }
@@ -231,10 +225,6 @@
    margin-top: -1.2rem;
 }
 
-/* .hero {
-   position: relative;
-}
-  */
  .hero-container {
      display: flex;
      align-items: center;
@@ -445,7 +435,6 @@
    color: var(--san-juan-blue);
    margin-bottom: 1rem;
 }
-
 /* end ready section */
 
 
@@ -504,9 +493,6 @@
 
 /* media query for tablet */
 @media only screen and (min-width: 768px) {
-   /* #header {
-     height: 75vh;
-   } */
      #header .hamburger {
         display: none;
      }
