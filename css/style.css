@@ -43,7 +43,7 @@
 
  img,
  picture {
-    max-width: 100%;
+    width: 100%;
     display: block;
  }
 
@@ -107,10 +107,9 @@
  #header {
     position: relative;
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
     overflow: hidden; 
     background-color: hsl(207, 44%, 95%);
-    overflow: hidden;
  }
 
  #header .header {
@@ -219,26 +218,30 @@
     top: 0;
  }
 
+ .nav-btn {
+    display: none;
+ }
  /*end header section */
 
 
  /* hero section */
-.hero-container picture{
+.hero-container picture img{
    z-index: 9;
    margin-left: 3rem;
    margin-top: -1.2rem;
 }
 
-.hero {
+/* .hero {
    position: relative;
 }
- 
+  */
  .hero-container {
      display: flex;
      align-items: center;
      justify-content: center;
      flex-direction: column;
      text-align: center;
+     position: relative;
  }
 
   .circle {
@@ -247,6 +250,10 @@
     height: 780px;
     left: -202px;
     top: -550px;
+ }
+
+ .hero-desc {
+    padding: 3rem 0;
  }
 
  .text h1 {
@@ -316,10 +323,11 @@
 }
 
  .logo {
-   display: flex;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-auto-rows: minmax(60px, auto);   
    align-items: center;
-   justify-content: space-around;
-   padding: 1rem 0;
+   justify-items: center;
 }
 
 .clients-text h2 {
@@ -423,6 +431,10 @@
 
 /* ready section */
 .ready {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: center;
    text-align: center;
    background-color: var(--link-water-white);
    padding: 3rem 0;
@@ -431,6 +443,7 @@
 .ready h5 {
    font-size: var(--fs-v4-400);
    color: var(--san-juan-blue);
+   margin-bottom: 1rem;
 }
 
 /* end ready section */
@@ -443,55 +456,250 @@
    display: flex;
    align-items: center;
    justify-content: center;
+   flex-direction: column;
    height: 353px;
    position: relative;
    overflow: hidden;
 }
 
-.footer-container .circle-3 {
-   position: absolute;
-   width: 780px;
-   height: 780px;
-   right: -203px;
-   bottom: -604px;
-}
-
-.footer-logo {
-   padding: 2rem 0;
-}
-
-.footer-link li {
-   padding: .8rem 0;
+.footer-link {
+      padding: 1.5rem 0;
 }
 
 .footer-link a {
-   font-weight: var(--fw-700);
-   text-transform: capitalize;
    color: var(--link-water-white);
+   text-transform: capitalize;
+   font-weight: var(--fw-700);
+   line-height: 3;
    opacity: 70%;
-   transition: .6s cubic-bezier(0.37, 0, 0.63, 1);
 }
 
 .footer-link a:hover,
-.footer-link a:focus {
+.footer-link a:active {
    opacity: 100%;
 }
 
 .social-icons {
    display: flex;
-   align-items: center;
-   justify-content: space-evenly;
-   padding: 1rem 0;
+   flex-direction: row;
+   font-size: 1.8rem;
 }
 
 .social-icons a {
-   font-size: 1.5rem;
    color: var(--link-water-white);
-   transition: .6s cubic-bezier(0.5, 1, 0.89, 1);
+   transition: .6s cubic-bezier(0.37, 0, 0.63, 1);
 }
 
 .social-icons a:hover,
-.social-icons a:focus {
+.social-icons a:active {
    color: var(--charm-pink-actives);
 }
+
+.social-icons li {
+   padding: 0 1rem;
+}
+
 /* end services section */
+
+
+/* media query for tablet */
+@media only screen and (min-width: 768px) {
+   /* #header {
+     height: 75vh;
+   } */
+     #header .hamburger {
+        display: none;
+     }
+
+     .nav-item .btn {
+        display: none;
+     }
+
+     .nav-btn  {
+        display: inline-block;
+     }
+
+     #header .nav-list .nav-item {
+        position: initial;
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        width: 100%;
+        gap: 1rem;
+        background-color: transparent;
+        margin-left: -8rem;
+     }
+
+     #header .nav-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 100%;
+        height: 6rem;
+        padding: 1.8rem 1.5rem;
+     }
+
+     #header .nav-list .nav-item {
+        margin-top: 0rem;
+        padding: 0;
+     }
+
+     #header .nav-list .nav-item li a {
+        color: var(--san-juan-blue);
+        opacity: 70%;
+        transition: .6s cubic-bezier(0.11, 0, 0.5, 0);
+     }
+
+     #header .nav-bar .nav-list{
+        z-index: 9999;
+     }
+
+     #header .nav-list .nav-item li a:hover,
+     #header .nav-list .nav-item li a:active {
+        opacity: 100%;
+     }
+
+     .nav-bar .nav-btn{
+        cursor: pointer;
+        z-index: 999;
+     }
+
+     .nav-btn .btn:hover {
+         filter: contrast(.85);
+     }
+
+     .hero-container picture {
+        z-index: 9;
+        margin-left: 5rem;
+        margin-top: 7rem;
+        width: 500px;
+        margin: 0 auto;
+     }
+
+   .circle {
+      position: absolute;
+      width: 999px;
+      height: 999px;
+      left: -140px;
+      top: -640px;
+   }
+  
+   .hero-desc h1 {
+      font-size: var(--fs-v3-400);
+      width: 575px;
+   }
+
+   .email-info {
+      display: flex;
+      align-items: center;
+      padding: 2rem 0;
+   }
+   .email-info .btn {
+      width: 25%;
+      position: absolute;
+      right: 8rem;
+   }
+
+   .email-info .email-add {
+   width: 90%;    
+   position: relative;
+}
+
+.clients {
+   height: 40vh;
+}
+
+.clients-text p {
+   width: 456px;
+   margin: 0 auto;
+}
+
+.clients-text .circle-2 {
+   width: 780px;
+   height: 780px;
+   left: -25px;
+   bottom: 453px;
+}
+
+.implement {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+
+.implement-text h3 {
+    font-size: var(--fs-v2-400);
+}
+
+.implement p {
+   width: 575px;
+}
+
+.ui-ux {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.ui-ux-text p {
+   width: 575px;
+}
+
+.services {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.service {
+   max-width: 450px;
+}
+
+.service p {
+   max-width: 350px;
+}
+
+.clients {
+   height: 615px;
+}
+
+.logo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(60px, auto);
+ }
+
+.footer-container {
+   display: flex;
+   justify-content: space-between;
+   flex-direction: row;
+   padding: 0 3rem;
+   height: 100px;
+}
+
+.left {
+   display: flex;
+}
+
+.footer-link {
+   display: flex;
+   padding: 0 4rem;
+}
+
+.footer-link a {
+   padding: 0 .8rem;
+}
+
+ 
+
+
+
+
+}
+
+
+
+
+/* end media query for tablet */
