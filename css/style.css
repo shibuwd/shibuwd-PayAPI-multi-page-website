@@ -677,6 +677,15 @@
    flex-direction: row;
    padding: 0 3rem;
    height: 100px;
+   position: relative;
+}
+
+.footer-circle {
+   position: absolute;
+   width: 780px;
+   height: 780px;
+   right: -203px;
+   bottom: -604px;
 }
 
 .left {
@@ -692,14 +701,154 @@
    padding: 0 .8rem;
 }
 
- 
-
-
-
-
 }
-
-
-
-
 /* end media query for tablet */
+
+
+/* media query for desktop */
+@media only screen and (min-width: 920px) {
+   .hero-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row-reverse;
+      text-align: left;
+      padding: 0 6rem;
+   }
+   
+   .hero-container picture {
+      flex: 1;
+      max-width: 650px;
+      transform: scale(.7);
+   }
+
+   .hero-desc {
+      flex: 1;
+      max-width: 650px;
+   }
+
+   .circle {
+      position: absolute;
+      width: 780px;
+      height: 780px;
+      left: 800px;
+      top: -172px;
+   }
+
+   .hero-desc h1 {
+      font-size: var(--fs-v1-400);
+      width: 600px;
+   }
+
+   .email-info .btn {
+      width: 15%;
+      position: absolute;
+      right: 45rem;
+   }
+
+   .clients {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row-reverse;
+      height: 472px;
+      padding: 0 6rem;
+      text-align: left;
+   }
+
+   .partner {
+      flex: 1;
+      max-width: 650px;
+   }
+
+   .clients-text {
+      flex: 1;
+       max-width: 650px;
+       z-index: 999;
+   }
+
+   .clients-text h2 {
+      font-size: var(--fs-v2-400);
+   }
+
+   .clients-text p {
+      margin: 0;
+      padding: 2.5rem 0;
+   }
+
+   .circle-2 {
+      position: absolute;
+      width: 780px;
+      height: 780px;
+      left: -5px;
+      top: -459px;
+   }
+
+   .implement {
+      display: flex;
+      flex-direction: row;
+      text-align: left;
+   }
+
+   .implement p {
+      padding-left: 0;
+   }
+
+   .ui-ux {
+      display: flex;
+      flex-direction: row-reverse;
+      text-align: left;
+      padding: 0 6rem;
+   }
+
+   .ui-ux-img {
+     flex: 1;
+     max-width: 650px;
+   }
+
+   .ui-ux-text {
+      flex: 1;
+      max-width: 650px;
+   }
+
+   .ui-ux-text h3 {
+      font-size: var(--fs-v2-400);
+   }
+
+   .ui-ux-text p {
+      padding-left: 0;
+      width: 445px;
+   }
+
+   .services {
+      padding: 0 6rem;
+   }
+
+   .service {
+      max-width: 400px;
+   }
+
+   .ready {
+      display: flex;
+      flex-direction: row;
+      text-align: left;
+      padding: 0 6rem;
+   }
+
+   .ready-heading {
+      flex: 1;
+      max-width: 650px;
+   }
+
+   .email-info {
+      flex: 1;
+      max-width: 650px;
+   }
+
+   .email-info .btn {
+      width: 15%;
+      position: absolute;
+   }
+  
+}
+/* end media query for desktop */
