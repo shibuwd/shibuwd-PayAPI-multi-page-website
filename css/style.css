@@ -845,9 +845,10 @@
       max-width: 650px;
    }
 
-   .email-info .btn {
+   .ready .email-info .btn {
       width: 15%;
       position: absolute;
+      right: 10rem;
    }
   
 }
