@@ -790,12 +790,23 @@
       text-align: left;
    }
 
+   .implement-img {
+      flex: 1;
+      max-width: 650px;
+   }
+
+   .implement-text {
+      flex: 1;
+      max-width: 650px;
+   }
+
    .implement p {
       padding-left: 0;
    }
 
    .ui-ux {
       display: flex;
+      justify-content: space-between;
       flex-direction: row-reverse;
       text-align: left;
       padding: 0 6rem;
@@ -821,11 +832,13 @@
    }
 
    .services {
-      padding: 0 6rem;
+      padding: 0 7rem;
+      display: flex;
+      justify-content: space-between;
    }
 
    .service {
-      max-width: 400px;
+      max-width: 450px;
    }
 
    .ready {
