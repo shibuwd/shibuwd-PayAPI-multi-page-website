@@ -267,16 +267,19 @@
     padding: .8rem 2rem;
     outline: none;
     background-color: var(--link-water-white);
+    color: var(--mirage-blue);
     border: none;
     font-weight: var(--fw-700);
-    opacity: .5;
+    opacity: 70%;
     box-shadow: -1px 0px 5px -1px hsla(0, 2%, 10%, 0.2);
     -webkit-box-shadow: -1px 0px 5px -1px hsla(0, 2%, 10%, 0.2);
     -moz-box-shadow: -1px 0px 5px -1px hsla(0, 2%, 10%, 0.2);
  }
 
+ 
+
  .hero-desc p {
-    opacity: .5;
+    opacity: .8;
  }
 
  .hero-desc span {
@@ -364,8 +367,10 @@
 }
 
 .implement p {
-   color: var(--light-juan-blue);
+   /* color: var(--light-juan-blue); */
+   color: var(--mirage-blue);
    padding: 1rem .5rem;
+   opacity: 80%;
 }
 /* end implement section */
 
@@ -382,9 +387,9 @@
 }
 
 .ui-ux-text p {
-   color: var(--san-juan-blue);
+   color: var(--mirage-blue);
    padding: 1rem .8rem;
-   opacity: 70%;
+   opacity: 80%;
 }
 /* end ui-ux section */
 
@@ -412,8 +417,8 @@
 }
 
 .service p {
-   color: var(--san-juan-blue);
-   opacity: 70%;
+   color: var(--mirage-blue);
+   opacity: 80%;
    padding: 0  1rem;
 }
 /* end services section */
@@ -532,8 +537,8 @@
      }
 
      #header .nav-list .nav-item li a {
-        color: var(--san-juan-blue);
-        opacity: 70%;
+        color: var(--mirage-blue);
+        opacity: 100%;
         transition: .6s cubic-bezier(0.11, 0, 0.5, 0);
      }
 
@@ -543,7 +548,7 @@
 
      #header .nav-list .nav-item li a:hover,
      #header .nav-list .nav-item li a:active {
-        opacity: 100%;
+        opacity: 70%;
      }
 
      .nav-bar .nav-btn{
