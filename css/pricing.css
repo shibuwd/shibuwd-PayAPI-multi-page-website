@@ -1,0 +1,47 @@
+ :root {
+     /* primary color */
+     --dark-pink: hsl(337, 48%, 49%);
+     --link-water-white: hsl(220, 60%, 99%);
+
+     /* secondary color */
+     --san-juan-blue: hsl(207, 33%, 32%);
+     --mirage-blue: hsl(207, 27%, 15%);
+     --charm-pink-actives: hsl(337, 60%, 64%);
+     --light-juan-blue: hsl(207, 16%, 50%);
+
+     /* font familly*/
+     --ff-body: 'Public Sans', sans-serif;
+     --ff-heading: 'DM Serif Display', serif;
+
+     /* font size */
+     --fs-body-400: .938rem;
+     --fs-v1-400: 4.5rem;
+     --fs-v2-400: 3.5rem;
+     --fs-v3-400: 3rem;
+     --fs-v4-400: 2rem;
+     --fs-v5-400: 2.25rem;
+     --fs-v6-400: 1.5rem;
+     --fs-v7-400: 1.25rem;
+     --fs-v8-400: 1.125rem;
+
+     /* font weight */
+     --fw-400: 400;
+     --fw-700: 700;
+ }
+
+ #header .nav-list .nav-item {
+     position: absolute;
+     background-color: var(--mirage-blue);
+     height: 100vh;
+     width: 80vw;
+     left: 100%;
+     top: 0;
+     right: 0;
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+     flex-direction: column;
+     z-index: 999;
+     transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1) left;
+     padding: 3rem 2rem;
+ }
