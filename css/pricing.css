@@ -29,19 +29,123 @@
      --fw-700: 700;
  }
 
- #header .nav-list .nav-item {
-     position: absolute;
-     background-color: var(--mirage-blue);
-     height: 100vh;
-     width: 80vw;
-     left: 100%;
-     top: 0;
-     right: 0;
+ /* header section */
+ #header {
+     /* position: relative; */
+     width: 100vw;
+     height: 300vh;
+     /* overflow: hidden; */
+     background-color: var(--link-water-white);
+ }
+
+ #header .nav-bar {
      display: flex;
      align-items: center;
-     justify-content: flex-start;
-     flex-direction: column;
+     justify-content: space-between;
+     height: 4rem;
+     padding: 2.5rem 2rem;
+     position: relative;
      z-index: 999;
-     transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1) left;
-     padding: 3rem 2rem;
  }
+
+ .pricing-circle {
+     position: absolute;
+     width: 780px;
+     height: 780px;
+     left: 74px;
+     top: -644px;
+     z-index: 99;
+ }
+ /*end header section */
+
+
+ /* pricing section */
+.pricing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 5rem;
+    background-color: var(--link-water-white);
+}
+
+.pricing-container hr {
+    width: 90%;
+    opacity: 25%;
+    margin: 0 auto;
+}
+
+.pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricing-container h1 {
+    font-size: var(--fs-v4-400);
+    color: var(--san-juan-blue);
+    padding: 2rem 0;
+}
+
+.headings {
+    text-align: center;
+}
+
+.headings h2 {
+    text-transform: capitalize;
+    font-size: var(--fs-v6-400);
+    color: var(--dark-pink);
+}
+
+.headings h3 {
+    font-size: var(--fs-v2-400);
+    color: var(--san-juan-blue);
+    margin-bottom: 1rem;
+}
+
+.headings p {
+    padding: 1.5rem .8rem;
+    color: var(--mirage-blue);
+    opacity: 80%;
+}
+
+.tik-mark {
+    padding: 1rem 0; 
+}
+
+.tik-mark li {
+    margin: .5rem;
+}
+
+.tik-mark span {
+    margin-left: .5rem;
+    margin-bottom: 1rem;
+    margin-top: .5rem;
+    color: var(--san-juan-blue);
+}
+
+.pricing-btn {
+    background: transparent;
+    border: 2px solid var(--san-juan-blue);
+    color: var(--san-juan-blue);
+    margin: 2rem 0;
+    text-transform: capitalize;
+    transition: .6s cubic-bezier(0.37, 0, 0.63, 1);
+}
+
+.pricing-btn:hover,
+.pricing-btn:active {
+    background: var(--san-juan-blue);
+    color: var(--link-water-white);
+}
+
+.footer-container {
+    position: absolute;
+    width: 100vw;
+    /* bottom: -105rem; */
+}
+/* end pricing section */
+
+
