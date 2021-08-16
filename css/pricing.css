@@ -29,35 +29,21 @@
      --fw-700: 700;
  }
 
- /* header section */
  #header {
      position: relative;
-     width: 100vw;
-     height: 290vh;
-     /* overflow: hidden; */
-     background-color: var(--link-water-white);
  }
 
- #header .nav-bar {
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-     height: 4rem;
-     padding: 2.5rem 2rem;
-     position: relative;
-     z-index: 999;
- }
+/* .header-container {
+    position: relative;
+} */
 
- .pricing-circle {
-     position: absolute;
-     width: 780px;
-     height: 780px;
-     left: 74px;
-     top: -644px;
-     z-index: 99;
- }
- /*end header section */
-
+.pricing-circle {
+    position: absolute;
+    width: 780px;
+    height: 780px;
+    left: 74px;
+    top: -644px;
+}
 
  /* pricing section */
 .pricing-container {
@@ -65,8 +51,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    top: 5rem;
     background-color: var(--link-water-white);
 }
 
@@ -86,7 +70,7 @@
 .pricing-container h1 {
     font-size: var(--fs-v4-400);
     color: var(--san-juan-blue);
-    padding: 2rem 0;
+    margin-top: 5rem;
 }
 
 .headings {
@@ -97,6 +81,7 @@
     text-transform: capitalize;
     font-size: var(--fs-v6-400);
     color: var(--dark-pink);
+    margin-top: 3rem;
 }
 
 .headings h3 {
@@ -144,20 +129,24 @@
 .footer-container {
     position: absolute;
     width: 100vw;
-    /* bottom: -120rem; */
 }
 /* end pricing section */
 
 
 /* media query for tablet */
 @media only screen and (min-width: 768px) {
-     #header {
-         position: relative;
-         width: 100vw;
-         height: 80vh;
-         /* overflow: hidden; */
-         background-color: var(--link-water-white);
+    #header .nav-bar .nav-btn {
+        z-index: 9999;
+    }
+    
+     .pricing-circle {
+         position: absolute;
+         width: 780px;
+         height: 780px;
+         left: 505px;
+         top: -464px;
      }
+
     .pricing-container {
         display: flex;
         flex-direction: column;
@@ -197,9 +186,12 @@
 
 /* media query for desktop */
 @media only screen and (min-width: 920px) {
-     #header {
-         height: 125vh;
-         text-align: left;
-     }
+      .pricing-circle {
+          position: absolute;
+          width: 780px;
+          height: 780px;
+          left: 800px;
+          top: -527px;
+      }
 
 }
