@@ -31,9 +31,9 @@
 
  /* header section */
  #header {
-     /* position: relative; */
+     position: relative;
      width: 100vw;
-     height: 300vh;
+     height: 290vh;
      /* overflow: hidden; */
      background-color: var(--link-water-white);
  }
@@ -144,8 +144,62 @@
 .footer-container {
     position: absolute;
     width: 100vw;
-    /* bottom: -105rem; */
+    /* bottom: -120rem; */
 }
 /* end pricing section */
 
 
+/* media query for tablet */
+@media only screen and (min-width: 768px) {
+     #header {
+         position: relative;
+         width: 100vw;
+         height: 80vh;
+         /* overflow: hidden; */
+         background-color: var(--link-water-white);
+     }
+    .pricing-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-direction: column;
+    }
+ .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-direction: row;
+        text-align: left;
+    }
+    .pricing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 1rem; 
+    }
+    .pricing-btn {
+        width: 25vw;
+    }
+    .headings p {
+        padding: 1.5rem .8rem;
+        color: var(--mirage-blue);
+        opacity: 80%;
+    }
+    .headings p {
+        padding: 1.5rem .8rem;
+        color: var(--mirage-blue);
+        opacity: 80%;
+    }
+}
+/* end media query for tablet */
+
+
+/* media query for desktop */
+@media only screen and (min-width: 920px) {
+     #header {
+         height: 125vh;
+         text-align: left;
+     }
+
+}
