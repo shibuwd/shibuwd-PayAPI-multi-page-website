@@ -29,6 +29,8 @@
      --fw-700: 700;
  }
 
+
+ /* header section */
  #header {
      position: relative;
  }
@@ -36,6 +38,8 @@
 /* .header-container {
     position: relative;
 } */
+/* end header section */
+
 
 .pricing-circle {
     position: absolute;
