@@ -303,7 +303,9 @@
  .hero-desc span {
     font-weight: var(--fw-700);
     border-bottom: 2px solid var(--san-juan-blue);
+    cursor: pointer;
  }
+
 /* end hero section */
 
 
