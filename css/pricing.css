@@ -111,6 +111,18 @@
     color: var(--san-juan-blue);
 }
 
+.g-one li:nth-child(4),
+.g-one li:nth-child(5),
+.g-one li:nth-child(6),
+.g-one li:nth-child(7) {
+    opacity: 50%;
+}
+
+.g-two li:nth-child(6),
+.g-two li:nth-child(7) {
+    opacity: 40%;
+}
+
 .pricing-btn {
     background: transparent;
     border: 2px solid var(--san-juan-blue);
@@ -167,18 +179,26 @@
         justify-content: center;
         padding: 0 1rem; 
     }
+
+    .pricing-container h1 {
+        font-size: var(--fs-v2-400);
+    }
+
     .pricing-btn {
         width: 25vw;
     }
+
     .headings p {
         padding: 1.5rem .8rem;
         color: var(--mirage-blue);
         opacity: 80%;
     }
+
     .headings p {
         padding: 1.5rem .8rem;
         color: var(--mirage-blue);
         opacity: 80%;
+        width: 223px;
     }
 }
 /* end media query for tablet */
@@ -194,4 +214,8 @@
           top: -527px;
       }
 
+      .headings p {
+          width: 350px;
+      }
 }
+/* end media query for desktop */

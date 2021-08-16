@@ -714,7 +714,7 @@
    }
 
    #header .nav-list ul {
-      width: 65vw;
+      width: 55vw;
    }
 
    .hero-container {
@@ -746,7 +746,7 @@
 
    .hero-desc h1 {
       font-size: var(--fs-v1-400);
-      width: 600px;
+      max-width: 600px;
       margin-top: 5rem;
    }
 
