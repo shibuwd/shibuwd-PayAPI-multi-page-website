@@ -170,12 +170,12 @@ main {
         font-size: var(--fs-v3-400);
         width: 700px;
         text-align: left;
-        margin-left: 8rem;
+        margin-left: 7rem;
     }
 
     .text hr {
         display: block;
-        width: 26vw;
+        width: 22vw;
         opacity: 20%;
         color: var(--san-juan-blue);
     }
@@ -196,7 +196,4 @@ main {
         margin: 0 auto;
     }
 }
-
-
-
 /* end media query for desktop */
