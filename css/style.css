@@ -43,7 +43,7 @@
 
  img,
  picture {
-    max-width: 100%;
+    width: 100%;
     display: block;
  }
 
@@ -241,7 +241,7 @@
 .hero-container picture{
    z-index: 999;
    margin-top: 1rem;
-   margin-left: 3rem;
+   margin-left: 4.5rem;
    /* display: fixed; */
 }
 
@@ -305,7 +305,6 @@
     border-bottom: 2px solid var(--san-juan-blue);
     cursor: pointer;
  }
-
 /* end hero section */
 
 
@@ -577,13 +576,13 @@
          position: absolute;
          width: 949px;
          height: 949px;
-         left: -1px;
+         left: -100px;
          top: -563px
       }
 
      .hero-container picture {
         z-index: 9;
-        margin-left: 15rem;
+        margin-left: 5rem;
         margin-top: 7rem;
         width: 500px;
         /* margin: 0 auto; */

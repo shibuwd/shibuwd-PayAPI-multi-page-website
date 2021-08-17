@@ -28,3 +28,95 @@
      --fw-400: 400;
      --fw-700: 700;
  }
+
+/* top section */
+main {
+    background-color: var(--link-water-white);
+}
+
+.top-content {
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+.top-content h1 {
+    font-size: var(--fs-v4-400);
+    color: var(--san-juan-blue);
+}
+
+.top h2 {
+    font-size: var(--fs-v6-400);
+    padding: 1.5rem 0;
+    color: var(--san-juan-blue);
+    text-transform: capitalize;
+}
+
+.top p {
+    color: var(--san-juan-blue);
+    opacity: 80%;
+}
+/* end top section */
+
+/* mid section */
+.mid-content {
+    text-align: center;
+}
+
+.mid-text {
+    padding: 2rem 0;
+}
+
+.text {
+    padding: 1rem 0;
+}
+
+.text .line {
+    border-top: 1px solid var(--san-juan-blue);
+    opacity: 50%;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.mid-text span {
+    color: var(--san-juan-blue);
+    opacity: 70%;
+}
+
+.mid-text h3 {
+    font-size: var(--fs-v3-400);
+    color: var(--dark-pink);
+    text-transform: uppercase;
+}
+/* end mid content section */
+
+/* botttom content */
+.bottom-content {
+    text-align: center;
+}
+
+.bottom-content h4 {
+    font-size: var(--fs-v6-400);
+    padding: 1.5rem 0;
+    color: var(--san-juan-blue);
+    text-transform: capitalize;
+}
+
+.bottom-content p {
+    color: var(--san-juan-blue);
+    opacity: 70%;
+    padding: 0 1rem;
+}
+/* end bottom section */
+
+
+/* media query for tablet */
+@media only screen and (min-width: 768px) {
+    .top-content h1 {
+        font-size: var(--fs-v3-400);
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    
+
+}
