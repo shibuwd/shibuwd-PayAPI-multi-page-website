@@ -28,3 +28,37 @@
     --fw-400: 400;
     --fw-700: 700;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* clients section */
+.clients {
+    background-color: transparent;
+    height: auto;
+    text-align: center;
+}
+
+.clients h2 {
+    font-size: var(--fs-v6-400);
+    color: var(--san-juan-blue);
+    opacity: 70%;
+    padding: 0 2rem;
+}
+
+.logo li img {
+    color: red;
+}
