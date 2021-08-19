@@ -123,6 +123,7 @@
    /* max-width: 1300px; */
    padding: 0 1rem;
    background-color: var(--link-water-white);
+
 }
 
 #header .nav-list ul {
@@ -130,7 +131,7 @@
    background-color: var(--mirage-blue);
    width: 80vw;
    height: 100vh;
-   left: 100%;
+   left: -100%;
    top: 0;
    display: flex;
    flex-direction: column;
@@ -139,6 +140,7 @@
    z-index: 1;
    overflow-x: hidden;
    transition: .6s cubic-bezier(0, 0.55, 0.45, 1) left;
+   z-index: 9999;
 }
 
 #header .nav-list ul.active {
@@ -238,11 +240,14 @@
 
 
  /* hero section */
+main {
+   overflow: hidden;
+}
+
 .hero-container picture{
    z-index: 999;
    margin-top: 1rem;
    margin-left: 4.5rem;
-   /* display: fixed; */
 }
 
  .hero-container {
@@ -252,6 +257,7 @@
      flex-direction: column;
      text-align: center;
      position: relative;
+     overflow: hidden;
  }
 
   .circle {

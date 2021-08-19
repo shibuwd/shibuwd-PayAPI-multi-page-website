@@ -34,20 +34,8 @@
  #header {
      position: relative;
  }
-
-/* .header-container {
-    position: relative;
-} */
 /* end header section */
 
-
-.pricing-circle {
-    position: absolute;
-    width: 780px;
-    height: 780px;
-    left: 74px;
-    top: -644px;
-}
 
  /* pricing section */
 .pricing-container {
@@ -63,6 +51,16 @@
     opacity: 25%;
     margin: 0 auto;
 }
+
+.pricing-circle {
+    position: absolute;
+    width: 780px;
+    height: 780px;
+    left: 74px;
+    top: -644px;
+    overflow: hidden;
+}
+
 
 .pricing {
     display: flex;
