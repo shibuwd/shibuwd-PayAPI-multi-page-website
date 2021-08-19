@@ -29,6 +29,9 @@
      --fw-700: 700;
  }
 
+ .container {
+     overflow: hidden;
+ }
 
  /* header section */
  #header {
