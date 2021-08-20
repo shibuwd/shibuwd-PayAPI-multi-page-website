@@ -83,7 +83,8 @@ main {
 
 .signup-form .user-name label,
 .signup-form .user-email label,
-.signup-form .company-name label {
+.signup-form .company-name label,
+.signup-form .title-info label {
     display: none;
 }
 
@@ -97,39 +98,25 @@ main {
 
 .user-name input,
 .user-email input,
-.company-name input {
-      width: 100%;
-      height: 42px;
-      background-color: transparent;
-      border: none;
-      border-bottom: 1px solid hsl(207, 33%, 32%);
-      opacity: 50%;
-      mix-blend-mode: normal;
-      padding: .6rem;
-      margin-bottom: .6rem;
+.company-name input,
+.title-info input {
+    width: 100%;
+    height: 42px;
+    background-color: var(--link-water-white);
+    border: none;
+    border-bottom: 1px solid hsl(207, 33%, 32%);
+    opacity: 50%;
+    padding: .6rem;
+    margin-bottom: .6rem;
 }
 
-/* .user-psw label {
-    display: flex;
-} */
-
-.terms p {
-    font-size: .9rem;
+.msg-info textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid hsl(207, 33%, 32%);
+    opacity: 50%;
+    padding: .6rem;
 }
-
-.terms p input {
-    margin-right: .5rem;
-    width: 15px;
-    height: 15px;
-}
-
-.terms p a {
-    font-weight: 600;
-    color: var(--purple);
-    border-bottom: 2px solid var(--purple);
-}
-
-
 
 
 /* clients section */
