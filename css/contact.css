@@ -30,17 +30,104 @@
 }
 
 
+/* form section */
+/* label[for="username"],
+label[for="email"],
+label[for="company"],
+label[for="title"],
+label[for="message"] {
+    display: none;
+}
 
+.signup-form input{
+    width: 100%;
+    height: 42px;
+    border: none;
+    border-bottom-color: currentcolor;
+    border-bottom-style: none;
+    border-bottom-width: medium;
+    border-bottom: 1px solid var(--san-juan-blue);
+    opacity: 50%;
+    mix-blend-mode: normal;
+    padding: .8rem;
+}
 
+.signup-form textarea {
+    height: 89px;
+    width: 100%;
+    border: none;
+    border-bottom-color: currentcolor;
+    border-bottom-style: none;
+    border-bottom-width: medium;
+    border-bottom: 1px solid var(--san-juan-blue);
+    opacity: 50%;
+    mix-blend-mode: normal;
+}
 
+.terms input {
+    height: 24px;
+    width: 24px;
+} */
 
+/* label[for="username"],
+label[for="email"],
+label[for="company"],
+label[for="title"],
+label[for="message"] {
+    display: none;
+} */
 
+main {
+    background-color: var(--link-water-white);
+}
 
+.signup-form .user-name label,
+.signup-form .user-email label,
+.signup-form .company-name label {
+    display: none;
+}
 
+.form-desc h1 {
+    font-size: var(--fs-v4-400);
+    padding: 1.2rem 0;
+    text-align: center;
+    color: var(--san-juan-blue);
+    margin-top: 3rem;
+}
 
+.user-name input,
+.user-email input,
+.company-name input {
+      width: 100%;
+      height: 42px;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid hsl(207, 33%, 32%);
+      opacity: 50%;
+      mix-blend-mode: normal;
+      padding: .6rem;
+      margin-bottom: .6rem;
+}
 
+/* .user-psw label {
+    display: flex;
+} */
 
+.terms p {
+    font-size: .9rem;
+}
 
+.terms p input {
+    margin-right: .5rem;
+    width: 15px;
+    height: 15px;
+}
+
+.terms p a {
+    font-weight: 600;
+    color: var(--purple);
+    border-bottom: 2px solid var(--purple);
+}
 
 
 
@@ -50,6 +137,9 @@
     background-color: transparent;
     height: auto;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0;
 }
 
 .clients h2 {
@@ -58,7 +148,4 @@
     opacity: 70%;
     padding: 0 2rem;
 }
-
-.logo li img {
-    color: red;
-}
+/* end client section */
