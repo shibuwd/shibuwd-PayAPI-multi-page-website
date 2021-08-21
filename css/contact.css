@@ -91,6 +91,7 @@ main {
     opacity: 70%;
     padding: .6rem;
     font-family: var(--ff-body);
+    height: 89px;
 }
 
 .terms>input {
