@@ -143,12 +143,11 @@
     color: var(--link-water-white);
 }
 
-.footer-container {
+/* .footer-container {
     position: absolute;
     width: 100vw;
-}
+} */
 /* end pricing section */
-
 
 /* media query for tablet */
 @media only screen and (min-width: 768px) {

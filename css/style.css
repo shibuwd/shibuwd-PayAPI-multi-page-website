@@ -494,8 +494,12 @@ main {
    overflow: hidden;
 }
 
+.footer-container .left {
+   z-index: 999;
+}
+
 .footer-link {
-      padding: 1.5rem 0;
+    padding: 1.5rem 0;
 }
 
 .footer-link a {
@@ -529,7 +533,17 @@ main {
 
 .social-icons li {
    padding: 0 1rem;
+      z-index: 9999;
 }
+
+.footer-bg {
+   position: absolute;
+   width: 780px;
+   height: 780px;
+   right: -203px;
+   bottom: -604px;
+}
+
 /* end services section */
 
 
@@ -588,16 +602,17 @@ main {
          overflow: hidden;
      }
 
-     .circle img {
+   .circle img {
         transform: scale(1.2);
      }
-        .circle {
-         position: absolute;
-         width: 949px;
-         height: 949px;
-         left: -100px;
-         top: -563px
-      }
+
+   .circle {
+       position: absolute;
+       width: 949px;
+       height: 949px;
+       left: -100px;
+       top: -563px
+   }
 
      .hero-container picture {
         z-index: 9;
@@ -624,7 +639,7 @@ main {
    }
 
    .email-info .email-add {
-   width: 90%;    
+   width: 60vw;    
    position: relative;
 }
 
@@ -688,9 +703,9 @@ main {
 }
 
 .logo {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(60px, auto);
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-auto-rows: minmax(60px, auto);
  }
 
 .footer-container {
@@ -884,13 +899,13 @@ main {
 
    .email-info {
       flex: 1;
-      max-width: 650px;
+      max-width: 580px;
    }
 
    .ready .email-info .btn {
-      width: 15%;
+      width: 15vw;
       position: absolute;
-      right: 10rem;
+      right: 5rem;
    }
 }
 /* end media query for desktop */
