@@ -100,8 +100,13 @@
 
 
  /* header section */
+.container {
+   overflow: hidden;
+   background-color: var(--link-water-white);
+}
+
 #header {
-   position: fixed;
+   /* position: fixed; */
    z-index: 1000;
    left: 0;
    top: 0;
@@ -236,9 +241,10 @@
 
 
  /* hero section */
-main {
+ 
+/* main {
    overflow: hidden;
-}
+} */
 
 .hero-container picture{
    z-index: 999;
@@ -254,7 +260,7 @@ main {
      flex-direction: column;
      text-align: center;
      position: relative;
-     overflow: hidden;
+     /* overflow: hidden; */
  }
 
   .circle {
@@ -552,18 +558,15 @@ main {
       #header .hamburger {
          display: none;
       }
-
       #header .nav-bar {
          padding: .5rem 1.5rem;
          display: flex;
       }
-
        #header .nav-list {
           display: flex;
           align-items: center;
           justify-content: center;
-       }
-
+      }
       #header .nav-list ul {
          position: initial;
          display: flex;
@@ -582,6 +585,12 @@ main {
          display: none;
       }
 
+      .brand,
+      .nav-list,
+      .nav-btn {
+         z-index: 9999;
+      }
+
        .nav-btn {
           display: block;
        }
@@ -598,9 +607,9 @@ main {
          color: var(--san-juan-blue);
       }
 
-     .hero-container {
+     /* .hero-container {
          overflow: hidden;
-     }
+     } */
 
    .circle img {
         transform: scale(1.2);
@@ -611,15 +620,14 @@ main {
        width: 949px;
        height: 949px;
        left: -100px;
-       top: -563px
+       top: -563px;
    }
 
      .hero-container picture {
-        z-index: 9;
-        margin-left: 5rem;
-        margin-top: 7rem;
-        width: 500px;
-        /* margin: 0 auto; */
+      z-index: 9;
+      margin-left: 5rem;
+      margin-top: 7rem;
+      width: 500px;
      }
   
    .hero-desc h1 {
@@ -762,7 +770,8 @@ main {
    
    .hero-container picture {
       flex: 1;
-      max-width: 350px;
+      max-width: 450px;
+      margin-top: -2rem;
    }
 
    .hero-desc {
@@ -856,9 +865,21 @@ main {
       padding: 0 6rem;
    }
 
+   .u-circle {
+      position: absolute;
+      background-image: url(../assets/Rectangle-home\ .svg);
+      position: absolute;
+      width: 780px;
+      height: 780px;
+      left: 1050px;
+      top: 1653px;
+
+   }
+
    .ui-ux-img {
      flex: 1;
      max-width: 650px;
+     z-index: 99;
    }
 
    .ui-ux-text {
