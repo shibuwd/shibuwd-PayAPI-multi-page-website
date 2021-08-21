@@ -92,6 +92,7 @@ main {
     padding: .6rem;
     font-family: var(--ff-body);
     height: 89px;
+    background-color: var(--link-water-white);
 }
 
 .terms>input {
@@ -135,3 +136,80 @@ main {
     padding: 0 2rem;
 }
 /* end client section */
+
+
+/* media query for tablet */
+@media only screen and (min-width: 768px) {
+      .wrapper {
+          display: flex;
+          align-items: center;
+         flex-direction: column;
+      }
+    .form-desc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form-desc h1 {
+        font-size: var(--fs-v3-400);
+        width: 575px;
+        padding: 0 2rem;
+    }
+    .clients h2 {
+        font-size: var(--fs-v4-400);
+        margin-bottom: 2rem;
+    }
+}
+/* end media query for tablet */
+
+
+/* media query for desktop */
+@media only screen and (min-width: 1120px) {
+    #header .nav-bar {
+        padding: 1rem 4rem;
+    }
+    .form-desc h1 {
+        text-align: left;
+        /* width: 730px; */
+        padding: 2rem 0;
+    }
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        padding: 2rem 4rem;
+    }
+    .form-desc {
+        display: flex;
+        align-items: flex-start;
+    }
+    .signup-form {
+        flex: 1;
+        max-width: 445px;
+    }
+    .clents-container {
+        flex: 1;
+        max-width: 550px;
+    }
+    .clients h2 {
+        font-size: var(--fs-v6-400);
+        margin-bottom: 2rem;
+        text-align: left;
+    }
+    .logo {
+        gap: 1rem 5.5rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* end media query for desktop */
