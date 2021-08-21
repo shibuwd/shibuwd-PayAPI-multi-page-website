@@ -39,6 +39,7 @@
     text-transform: capitalize;
     transition: .6s cubic-bezier(0.37, 0, 0.63, 1);
     width: 10rem;
+    cursor: pointer;
 }
 
 .pricing-btn:hover,
@@ -102,7 +103,7 @@ main {
     margin-right: 1rem;
     background: var(--san-juan-blue);
     mix-blend-mode: normal;
-    opacity: 0.25;
+    opacity: 25%;
 }
 
 .terms {
@@ -113,7 +114,7 @@ main {
 
 .terms p {
     color: var(--san-juan-blue);
-    opacity: 70%;
+    opacity: 90%;
     margin-top: 1rem;
 }
 
@@ -127,6 +128,7 @@ main {
     display: flex;
     flex-direction: column;
     padding: 4rem 0;
+    margin-top: 5rem;
 }
 
 .clients h2 {
@@ -170,7 +172,6 @@ main {
     }
     .form-desc h1 {
         text-align: left;
-        /* width: 730px; */
         padding: 2rem 0;
     }
     .wrapper {
@@ -198,18 +199,8 @@ main {
         text-align: left;
     }
     .logo {
-        gap: 1rem 5.5rem;
+        gap: 1rem 5rem;
     }
 }
-
-
-
-
-
-
-
-
-
-
 
 /* end media query for desktop */
