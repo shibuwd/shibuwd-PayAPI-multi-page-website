@@ -241,11 +241,6 @@
 
 
  /* hero section */
- 
-/* main {
-   overflow: hidden;
-} */
-
 .hero-container picture{
    z-index: 999;
    margin-top: 1rem;
@@ -254,13 +249,12 @@
 }
 
  .hero-container {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     flex-direction: column;
-     text-align: center;
-     position: relative;
-     /* overflow: hidden; */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+   position: relative;
  }
 
   .circle {
@@ -400,7 +394,6 @@
 }
 
 .implement p {
-   /* color: var(--light-juan-blue); */
    color: var(--mirage-blue);
    padding: 1rem .5rem;
    opacity: 80%;
@@ -549,7 +542,6 @@
    right: -203px;
    bottom: -604px;
 }
-
 /* end services section */
 
 

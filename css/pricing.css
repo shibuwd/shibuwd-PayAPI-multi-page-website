@@ -141,12 +141,8 @@
     background: var(--san-juan-blue);
     color: var(--link-water-white);
 }
-
-/* .footer-container {
-    position: absolute;
-    width: 100vw;
-} */
 /* end pricing section */
+
 
 /* media query for tablet */
 @media only screen and (min-width: 768px) {
@@ -209,12 +205,12 @@
 
 /* media query for desktop */
 @media only screen and (min-width: 920px) {
-      .pricing-circle {
-          position: absolute;
-          width: 780px;
-          height: 780px;
-          left: 800px;
-          top: -527px;
+    .pricing-circle {
+        position: absolute;
+        width: 780px;
+        height: 780px;
+        left: 800px;
+        top: -527px;
       }
 
       .headings p {
