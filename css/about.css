@@ -53,7 +53,7 @@ main {
 
 .top p {
     color: var(--san-juan-blue);
-    opacity: 80%;
+    opacity: 85%;
 }
 /* end top section */
 
@@ -84,7 +84,7 @@ main {
 
 .mid-text span {
     color: var(--san-juan-blue);
-    opacity: 70%;
+    opacity: 85%;
 }
 
 .mid-text h3 {
@@ -109,7 +109,7 @@ main {
 
 .bottom-content p {
     color: var(--san-juan-blue);
-    opacity: 70%;
+    opacity: 85%;
     padding: 0 1rem;
 }
 /* end bottom section */
