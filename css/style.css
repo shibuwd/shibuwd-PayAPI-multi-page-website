@@ -174,7 +174,8 @@
    letter-spacing: initial;
 }
 
-#header .nav-list ul li:hover{
+#header .nav-list ul a:hover,
+#header .nav-list ul a:focus {
    opacity: 70%;
 }
 
@@ -510,7 +511,7 @@
 }
 
 .footer-link a:hover,
-.footer-link a:active {
+.footer-link a:focus {
    opacity: 100%;
 }
 
@@ -526,7 +527,7 @@
 }
 
 .social-icons a:hover,
-.social-icons a:active {
+.social-icons a:focus {
    color: var(--charm-pink-actives);
 }
 

@@ -137,7 +137,7 @@
 }
 
 .pricing-btn:hover,
-.pricing-btn:active {
+.pricing-btn:focus {
     background: var(--san-juan-blue);
     color: var(--link-water-white);
 }
