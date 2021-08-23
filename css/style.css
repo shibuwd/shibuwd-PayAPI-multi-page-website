@@ -96,6 +96,12 @@
 .btn:focus {
     filter: contrast(.85);
 }
+
+.brand img,
+.footer-container .left img {
+   width: 135px;
+   height: 38px;
+}
 /* end global style */
 
 
